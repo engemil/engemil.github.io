@@ -60,6 +60,8 @@ footer {
     background-color: var(--primary-color);
     margin: 0.25rem;
     color: #ffffff;
+    display: inline-block;
+    white-space: normal; /* Added to allow text wrapping */
 }
 
 .navbar {
