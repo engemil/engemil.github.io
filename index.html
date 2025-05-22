@@ -1,67 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!-- Bootstrap core CSS -->
-    <link href="./static/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Custom style -->
+    <link rel="stylesheet" href="style.css">
 
-    <!-- Custom styles for this template -->
-    <link href="./static/style.css" rel="stylesheet">
+    <!-- Shortcut Icon -->
+    <link rel="shortcut icon" href="./media/engemil_logo_no_bg.png">
 
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Title -->
+    <title>EngEmil</title>
+</head>
 
-    <link rel="shortcut icon" href="./media/engemil_profile_picture.jpeg">
+<body>
+     
+    <!-- Placeholder for header -->
+    <div id="header-placeholder"></div>
 
-    <title>Emil Jenssen | Cybernetics & Embedded Systems Entusiast </title>
-
-  </head>
-
-  <body style="">
-    <div class="site-wrapper">
-      <div class="site-wrapper-inner">
-        <div class="cover-container">
-          <div class="inner cover">
-
-            <div class="row">
-              <div class="col-md-4">
-                <img src="./media/engemil_profile_picture.jpeg" alt="AI generated pixel art" title="Avatar of Engemil created by Copilot" class="img-me img-fluid">
-              </div>
-
-              <div class="col">
-                <h1 class="cover-heading">Emil Jenssen</h1>
-                
-                <p> Robotics and Cybernetics- & Embedded Software Engineer, with a MSc in Robotics and Cybernetics specialized in Robots & Vessel Control.</p> 
-                
-                <p> I'm an enthusiast for robotics, cybernetics, embedded systems, real-time operative systems, and software- & hardware development.</p>
-                <p></p>
-                <ul>
-                  <li><a href="/workshop.html">Workshop</a></li>
-                  <li><a href="/projects.html">Project portfolio</a></li>
-                  <li><a href="/resume.html">Resume</a></li>
-                </ul>
-
-                <p class="footer links">
-                  <a href="https://github.com/engemil" rel="noopener" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
-                  ·
-                  <a href="https://www.linkedin.com/in/emil-jenssen" rel="noopener" title="Linkedin"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                  ·
-                  <a href="https://makerworld.com/en/@engemil" rel="noopener" title="Makerworld"><i class="fa-solid fa-cube" aria-hidden="true"></i></a>
-                </p>
-
-
-              </div>
-            </div>
-          </div>
-
+    <!-- Home Page Content -->
+    <main>
+        <div class="container text-center py-4">
+            <h1 class="display-4">From Embedded to Cloud</h1>
+            <p class="lead">Product developer, robotics, cybernetics, embedded systems, IoT, IT, cloud, security, PCB, CAD, project management & consultant</p>
         </div>
-      </div>
-    </div>
 
 
-</body></html>
+        <!-- Skill Section -->
+        <section id="fundamental" class="container py-3 tech-layer">
+            <h2 class="h3 text-center mb-4"></h2>
+            <div class="row justify-content-center">
+
+
+                <!-- Project Management -->
+                <div class="col-lg-4 col-12 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex">
+                            <i class="bi bi-bar-chart me-3" style="font-size: 2rem;"></i>
+                            <div>
+                                <h3 class="card-title h5">Project Management</h3>
+                                <div class="mt-2">
+                                    <span class="badge bg-primary me-1 mb-1">Azure DevOps</span>
+                                    <span class="badge bg-primary me-1 mb-1">Trello</span>
+                                    <span class="badge bg-primary me-1 mb-1">Jira</span>
+                                    <span class="badge bg-primary me-1 mb-1">Kanban</span>
+                                    <span class="badge bg-primary me-1 mb-1">Agile</span>
+                                    <span class="badge bg-primary me-1 mb-1">Scrum</span>
+                                    <span class="badge bg-primary me-1 mb-1">Lean</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RTOS & Platforms -->
+                <div class="col-lg-4 col-12 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex">
+                            <i class="bi bi-cpu me-3" style="font-size: 2rem;"></i>
+                            <div>
+                                <h3 class="card-title h5">RTOS & Platforms</h3>
+                                <div class="mt-2">
+                                    <span class="badge bg-primary me-1 mb-1">ChibiOS</span>
+                                    <span class="badge bg-primary me-1 mb-1">FreeRTOS</span>
+                                    <span class="badge bg-primary me-1 mb-1">PlatformIO</span>
+                                    <span class="badge bg-primary me-1 mb-1">Azure SDK for Embedded C</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Microcontrollers & Microprocessors -->
+                <div class="col-lg-4 col-12 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex">
+                            <i class="bi bi-motherboard me-3" style="font-size: 2rem;"></i>
+                            <div>
+                                <h3 class="card-title h5">Microcontrollers & Microprocessors</h3>
+                                <div class="mt-2">
+                                    <span class="badge bg-primary me-1 mb-1">STM32</span>
+                                    <span class="badge bg-primary me-1 mb-1">AVR</span>
+                                    <span class="badge bg-primary me-1 mb-1">XMEGA</span>
+                                    <span class="badge bg-primary me-1 mb-1">Raspberry Pi Pico</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Electronics Interfaces -->
+                <div class="col-lg-4 col-12 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex">
+                            <i class="bi bi-pci-card me-3" style="font-size: 2rem;"></i>
+                            <div>
+                                <h3 class="card-title h5">Electronics Interfaces</h3>
+                                <div class="mt-2">
+                                    <span class="badge bg-primary me-1 mb-1">CANbus</span>
+                                    <span class="badge bg-primary me-1 mb-1">DroneCAN</span>
+                                    <span class="badge bg-primary me-1 mb-1">UART</span>
+                                    <span class="badge bg-primary me-1 mb-1">I2C</span>
+                                    <span class="badge bg-primary me-1 mb-1">SPI</span>
+                                    <span class="badge bg-primary me-1 mb-1">USB</span>
+                                    <span class="badge bg-primary me-1 mb-1">RS485</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modelling and Simulation -->
+                <div class="col-lg-4 col-12 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex">
+                            <i class="bi bi-airplane me-3" style="font-size: 2rem;"></i>
+                            <div>
+                                <h3 class="card-title h5">Modelling & Simulation</h3>
+                                <div class="mt-2">
+                                    <span class="badge bg-primary me-1 mb-1">Matlab</span>
+                                    <span class="badge bg-primary me-1 mb-1">Simulink</span>
+                                    <span class="badge bg-primary me-1 mb-1">Octave</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Containerization -->
+                <div class="col-lg-4 col-12 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex">
+                            <i class="bi bi-box me-3" style="font-size: 2rem;"></i>
+                            <div>
+                                <h3 class="card-title h5">Containerization</h3>
+                                <div class="mt-2">
+                                    <span class="badge bg-primary me-1 mb-1">Docker</span>
+                                    <span class="badge bg-primary me-1 mb-1">Docker Compose</span>
+                                    <span class="badge bg-primary me-1 mb-1">VS Code Dev Container</span>
+                                    <span class="badge bg-primary me-1 mb-1">Kubernetes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Automation & PLC -->
+                <div class="col-lg-4 col-12 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex">
+                            <i class="bi bi-hdd-network me-3" style="font-size: 2rem;"></i>
+                            <div>
+                                <h3 class="card-title h5">Automation & PLC </h3>
+                                <div class="mt-2">
+                                    <span class="badge bg-primary me-1 mb-1">Home Assistant</span>
+                                    <span class="badge bg-primary me-1 mb-1">Mitsubishi Electric PLC</span>
+                                    <span class="badge bg-primary me-1 mb-1">GX Works 2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend Development -->
+                <div class="col-lg-4 col-12 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex">
+                            <i class="bi bi-display me-3" style="font-size: 2rem;"></i>
+                            <div>
+                                <h3 class="card-title h5">Frontend Development</h3>
+                                <div class="mt-2">
+                                    <span class="badge bg-primary me-1 mb-1">.NET MAUI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud -->
+                <div class="col-lg-4 col-12 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex">
+                            <i class="bi bi-cloud me-3" style="font-size: 2rem;"></i>
+                            <div>
+                                <h3 class="card-title h5">Cloud</h3>
+                                <div class="mt-2">
+                                    <span class="badge bg-primary me-1 mb-1">Azure</span>
+                                    <span class="badge bg-primary me-1 mb-1">Azure IoT</span>
+                                    <span class="badge bg-primary me-1 mb-1">AWS Lightsail</span>
+                                    <span class="badge bg-primary me-1 mb-1">Hetzner VPS</span>
+                                    <span class="badge bg-primary me-1 mb-1">DigitalOcean VPS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Network Protocols -->
+                <div class="col-lg-4 col-12 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex">
+                            <i class="bi bi-wifi me-3" style="font-size: 2rem;"></i>
+                            <div>
+                                <h3 class="card-title h5">Network Protocols</h3>
+                                <div class="mt-2">
+                                    <span class="badge bg-primary me-1 mb-1">MQTT</span>
+                                    <span class="badge bg-primary me-1 mb-1">HTTP/HTTPS</span>
+                                    <span class="badge bg-primary me-1 mb-1">Modbus</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- IT & Security -->
+                <div class="col-lg-4 col-12 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex">
+                            <i class="bi bi-shield-lock me-3" style="font-size: 2rem;"></i>
+                            <div>
+                                <h3 class="card-title h5">IT & Security</h3>
+                                <div class="mt-2">
+                                    <span class="badge bg-primary me-1 mb-1">OpenVPN</span>
+                                    <span class="badge bg-primary me-1 mb-1">Wireguard</span>
+                                    <span class="badge bg-primary me-1 mb-1">Cryptsetup</span>
+                                    <span class="badge bg-primary me-1 mb-1">Caddy</span>
+                                    <span class="badge bg-primary me-1 mb-1">Nginx Proxy Manager</span>
+                                    <span class="badge bg-primary me-1 mb-1">Authelia</span>
+                                    <span class="badge bg-primary me-1 mb-1">LLDAP</span>
+                                    <span class="badge bg-primary me-1 mb-1">fail2ban</span>
+                                    <span class="badge bg-primary me-1 mb-1">SSH Key</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Monitoring -->
+                <div class="col-lg-4 col-12 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex">
+                            <i class="bi bi-binoculars me-3" style="font-size: 2rem;"></i>
+                            <div>
+                                <h3 class="card-title h5">Monitoring</h3>
+                                <div class="mt-2">
+                                    <span class="badge bg-primary me-1 mb-1">Grafana</span>
+                                    <span class="badge bg-primary me-1 mb-1">Azure Monitor</span>
+                                    <span class="badge bg-primary me-1 mb-1">Prometheus</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificates -->
+                <div class="col-lg-4 col-12 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex">
+                            <i class="bi bi-patch-check me-3" style="font-size: 2rem;"></i>
+                            <div>
+                                <h3 class="card-title h5">Certificates</h3>
+                                <div class="mt-2">
+                                    <span class="badge bg-primary me-1 mb-1">Microsoft Certified: Azure IoT Developer Specialty</span>
+                                    <span class="badge bg-primary me-1 mb-1">Microsoft Certified: Azure Fundamentals</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CAD & 3D-Printing -->
+                <div class="col-lg-4 col-12 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex">
+                            <i class="bi bi-boxes me-3" style="font-size: 2rem;"></i>
+                            <div>
+                                <h3 class="card-title h5">CAD & 3D-Printing </h3>
+                                <div class="mt-2">
+                                    <span class="badge bg-primary me-1 mb-1">OnShape</span>
+                                    <span class="badge bg-primary me-1 mb-1">FreeCAD</span>
+                                    <span class="badge bg-primary me-1 mb-1">Bambu Lab P1P</span>
+                                    <span class="badge bg-primary me-1 mb-1">Bambu Lab Studio</span>
+                                    <span class="badge bg-primary me-1 mb-1">Orca Slicer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Electronics & PCB-Design -->
+                <div class="col-lg-4 col-12 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex">
+                            <i class="bi bi-hdd-rack me-3" style="font-size: 2rem;"></i>
+                            <div>
+                                <h3 class="card-title h5">Electronics & PCB Design</h3>
+                                <div class="mt-2">
+                                    <span class="badge bg-primary me-1 mb-1">KiCAD</span>
+                                    <span class="badge bg-primary me-1 mb-1">EasyCAD</span>
+                                    <span class="badge bg-primary me-1 mb-1">LTspice (Simulation)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                                <!-- Programming Languages -->
+                <div class="col-lg-4 col-12 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex">
+                            <i class="bi bi-code-slash me-3" style="font-size: 2rem;"></i>
+                            <div>
+                                <h3 class="card-title h5">Programming Languages</h3>
+                                <div class="mt-2">
+                                    <span class="badge bg-primary me-1 mb-1">C/C++</span>
+                                    <span class="badge bg-primary me-1 mb-1">Bash (Unix Shell)</span>
+                                    <span class="badge bg-primary me-1 mb-1">Python</span>
+                                    <span class="badge bg-primary me-1 mb-1">C#</span>
+                                    <span class="badge bg-primary me-1 mb-1">Java</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- IDEs -->
+                <div class="col-lg-4 col-12 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex">
+                            <i class="bi bi-code me-3" style="font-size: 2rem;"></i>
+                            <div>
+                                <h3 class="card-title h5">IDEs</h3>
+                                <div class="mt-2">
+                                    <span class="badge bg-primary me-1 mb-1">VS Code</span>
+                                    <span class="badge bg-primary me-1 mb-1">Visual Studio 2022</span>
+                                    <span class="badge bg-primary me-1 mb-1">Microchip Studio</span>
+                                    <span class="badge bg-primary me-1 mb-1">STM32CubeIDE</span>
+                                    <span class="badge bg-primary me-1 mb-1">Android Studio</span>
+                                    <span class="badge bg-primary me-1 mb-1">Eclipse IDE</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Version Control -->
+                <div class="col-lg-4 col-12 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex">
+                            <i class="bi bi-git me-3" style="font-size: 2rem;"></i>
+                            <div>
+                                <h3 class="card-title h5">Version Control</h3>
+                                <div class="mt-2">
+                                    <span class="badge bg-primary me-1 mb-1">GitHub</span>
+                                    <span class="badge bg-primary me-1 mb-1">GitLab</span>
+                                    <span class="badge bg-primary me-1 mb-1">DevOps</span>
+                                    <span class="badge bg-primary me-1 mb-1">Bitbucket</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+        <section id="about" class="container py-3">
+            <div class="text-center">
+                <h2 class="h3 mb-4">About Me</h2>
+                <p class="text-muted mx-auto" style="max-width: 600px;">
+                    I'm Emil, a versatile developer with expertise spanning from embedded software, hardware integration, control systems, containerization, cloud and IoT technologies, and project management.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Placeholder for footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.2 });
+            cards.forEach(card => observer.observe(card));
+        });
+    </script>
+
+    <!-- JavaScript to load header and footer -->
+    <script>
+        function loadHTML(file, elementId) {
+        fetch(file)
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById(elementId).innerHTML = data;
+            })
+            .catch(error => console.error('Error loading file:', error));
+        }
+        loadHTML('common/header.html', 'header-placeholder');
+        loadHTML('common/footer.html', 'footer-placeholder');
+    </script>
+
+</body>
+</html>
