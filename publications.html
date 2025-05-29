@@ -3,50 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
-
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    
     <!-- Custom style -->
     <link rel="stylesheet" href="style.css">
-
     <!-- Shortcut Icon -->
     <link rel="shortcut icon" href="./media/engemil_logo_no_bg.png">
-
-    <!-- Title -->
     <title>EngEmil</title>
-
 </head>
-
 <body>
-    
-    <!-- Placeholder for header -->
+    <!-- Header -->
     <div id="header-placeholder"></div>
-    
 
-    <!-- Publications Page Content -->
+    <!-- Main Content -->
     <main>
-        <div class="container text-center py-4">
-            <h1 class="display-4">Publications</h1>
-        </div>
+        <section class="container py-4 text-center">
+            <h2 class="display-4 mb-4">Publications</h2>
+        </section>
 
         <!-- Academic Publications -->
-        <section id="academic" class="container py-3 tech-layer">
-            <h2 class="h3 text-center mb-4">Academic Publications</h2>
+        <section id="academic" class="container py-4 text-center">
+            <h2 class="h3 mb-4">Academic Publications</h2>
             <div class="row justify-content-center">
-
-                <!-- Master's Thesis -->
                 <div class="col-lg-6 col-12 mb-4">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body d-flex flex-column">
                             <div class="d-flex align-items-start">
-                                <i class="bi bi-book me-3" style="font-size: 2rem;"></i>
+                                <i class="bi bi-book icon-large me-3"></i>
                                 <div>
-                                    <h3 class="card-title h5"><b>Master's Thesis:</b> Position Control and Locking of Permanent Magnet Synchronous Motor for Propeller Drives in Drones</h3>
-                                    <div class="mt-2">
+                                    <h3 class="card-title h5"><span class="fw-bold">Master's Thesis:</span> Position Control and Locking of Permanent Magnet Synchronous Motor for Propeller Drives in Drones</h3>
+                                    <div class="badges mt-2">
                                         <span class="badge bg-primary me-1 mb-1">Motor Control</span>
                                         <span class="badge bg-primary me-1 mb-1">ChibiOS</span>
                                         <span class="badge bg-primary me-1 mb-1">RTOS</span>
@@ -55,7 +42,7 @@
                                 </div>
                             </div>
                             <p class="mt-3 mb-2 text-muted">
-                                A state machine for motor control, with states such as idle, speed control, and position control. Focus on position control with minimal hardware implementation. The state machine is built into the open-source RTOS (<a href="https://www.chibios.org/">ChibiOS</a>), that the open-source motor controller firmware (<a href="https://vesc-project.com/">VESC</a>) is built with
+                                Implements a state machine for speed and position control of an electric motor. It focuses on integrating position control with minimal hardware implementation. The state machine is built into the open-source RTOS (<a href="https://www.chibios.org/">ChibiOS</a>), that the open-source motor controller firmware (<a href="https://vesc-project.com/">VESC</a>) is built with.
                             </p>
                             <div class="mt-auto">
                                 <a href="https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/3024778" target="_blank" class="me-2 text-decoration-none">NTNU Open</a>
@@ -66,16 +53,14 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Conference Paper: IECON 2022 -->
                 <div class="col-lg-6 col-12 mb-4">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body d-flex flex-column">
                             <div class="d-flex align-items-start">
-                                <i class="bi bi-bookmark-check me-3" style="font-size: 2rem;"></i>
+                                <i class="bi bi-bookmark-check icon-large me-3"></i>
                                 <div>
-                                    <h3 class="card-title h5"><b>Conference Paper IECON 2022:</b> Position Locking for Permanent Magnet Synchronous Machine Propeller Drives in Drones by Hall-Effect Sensor-Assisted Nonlinear Observer</h3>
-                                    <div class="mt-2">
+                                    <h3 class="card-title h5"><span class="fw-bold">Conference Paper IECON 2022:</span> Position Locking for Permanent Magnet Synchronous Machine Propeller Drives in Drones by Hall-Effect Sensor-Assisted Nonlinear Observer</h3>
+                                    <div class="badges mt-2">
                                         <span class="badge bg-primary me-1 mb-1">Motor Control</span>
                                         <span class="badge bg-primary me-1 mb-1">ChibiOS</span>
                                         <span class="badge bg-primary me-1 mb-1">RTOS</span>
@@ -84,7 +69,7 @@
                                 </div>
                             </div>
                             <p class="mt-3 mb-2 text-muted">
-                                The paper presents a hall-effect sensor-assisted non-linear observer-based solution for position locking of a surface-mounted permanent magnet synchronous motor (SMPMSM) propeller drive in drone applications. The paper is based on the Master's Thesis
+                                The paper presents a hall-effect sensor-assisted non-linear observer-based solution for position locking of a surface-mounted permanent magnet synchronous motor (SMPMSM) propeller drive in drone applications. The paper is based on the Master's Thesis.
                             </p>
                             <div class="mt-auto">
                                 <a href="https://ieeexplore.ieee.org/document/9968599" target="_blank" class="me-2 text-decoration-none">IEEE Xplore</a>
@@ -92,24 +77,21 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
         </section>
 
-        <!-- Work Related Publications -->
-        <section id="academic" class="container py-3 tech-layer">
-            <h2 class="h3 text-center mb-4">Work Related Publications</h2>
+        <!-- Work-Related Publications -->
+        <section id="work-related" class="container py-4 text-center">
+            <h2 class="h3 mb-4">Work-Related Publications</h2>
             <div class="row justify-content-center">
-
-                <!-- Drone Developer -->
                 <div class="col-lg-6 col-12 mb-4">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body d-flex flex-column">
                             <div class="d-flex align-items-start">
-                                <i class="bi bi-airplane-engines me-3" style="font-size: 2rem;"></i>
+                                <i class="bi bi-airplane-engines icon-large me-3"></i>
                                 <div>
-                                    <h3 class="card-title h5"><b>Drone Developer</b></h3>
-                                    <div class="mt-2">
+                                    <h3 class="card-title h5"><span class="fw-bold">Drone Developer</span></h3>
+                                    <div class="badges mt-2">
                                         <span class="badge bg-primary me-1 mb-1">CAN Bus</span>
                                         <span class="badge bg-primary me-1 mb-1">Motor Control</span>
                                         <span class="badge bg-primary me-1 mb-1">HW/SW Troubleshooting</span>
@@ -118,24 +100,22 @@
                                 </div>
                             </div>
                             <p class="mt-3 mb-2 text-muted">
-                                Drone Developer (consultant) for Maritime Robotics. Troubleshooted CAN Bus issues related to the development of their VTOL Falk, fixed-wing aerial drone with VTOL capability. Required both software and hardware analysis of the autopilot and motorcontrollers
+                                Drone Developer (consultant) for Maritime Robotics. Troubleshooted CAN Bus issues related to the development of their VTOL Falk, fixed-wing aerial drone with VTOL capability. Required both software and hardware analysis of the autopilot and motorcontrollers.
                             </p>
                             <div class="mt-auto">
-                                <a href="https://www.linkedin.com/pulse/et-samarbeid-med-luft-under-vingene-brilliant-magic-at-work/" target="_blank" class="me-2 text-decoration-none">Linkedin Article by Brilliant AS</a>
+                                <a href="https://www.linkedin.com/pulse/et-samarbeid-med-luft-under-vingene-brilliant-magic-at-work/" target="_blank" class="me-2 text-decoration-none">LinkedIn Article by Brilliant AS</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Project Leader -->
                 <div class="col-lg-6 col-12 mb-4">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body d-flex flex-column">
                             <div class="d-flex align-items-start">
-                                <i class="bi bi-clipboard-data me-3" style="font-size: 2rem;"></i>
+                                <i class="bi bi-clipboard-data icon-large me-3"></i>
                                 <div>
-                                    <h3 class="card-title h5"><b>Project Leader</b></h3>
-                                    <div class="mt-2">
+                                    <h3 class="card-title h5"><span class="fw-bold">Project Leader</span></h3>
+                                    <div class="badges mt-2">
                                         <span class="badge bg-primary me-1 mb-1">CAN Bus</span>
                                         <span class="badge bg-primary me-1 mb-1">Motor Control</span>
                                         <span class="badge bg-primary me-1 mb-1">HW/SW Troubleshooting</span>
@@ -144,24 +124,22 @@
                                 </div>
                             </div>
                             <p class="mt-3 mb-2 text-muted">
-                                Project leader and consultant for Care Safety Innovations development of their digitalization solution for home-care. From zero to minimal viable product (MVP) and pilot launch
+                                Project leader and consultant for Care Safety Innovations development of their digitalization solution for home-care. From zero to a minimal viable product (MVP) and the first pilot launch.
                             </p>
                             <div class="mt-auto">
-                                <a href="https://www.linkedin.com/posts/brilliant-magic-at-work_fremtidens-hjemmetjeneste-utvikles-fra-trondheim-activity-7174347424289742848-mXfZ" target="_blank" class="me-2 text-decoration-none">Linkedin Post by Brilliant AS</a>
+                                <a href="https://www.linkedin.com/posts/brilliant-magic-at-work_fremtidens-hjemmetjeneste-utvikles-fra-trondheim-activity-7174347424289742848-mXfZ" target="_blank" class="me-2 text-decoration-none">LinkedIn Post by Brilliant AS</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Linkedin Article: Containerized Embedded Development Environment -->
                 <div class="col-lg-6 col-12 mb-4">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body d-flex flex-column">
                             <div class="d-flex align-items-start">
-                                <i class="bi bi-cpu me-3" style="font-size: 2rem;"></i>
+                                <i class="bi bi-cpu icon-large me-3"></i>
                                 <div>
-                                    <h3 class="card-title h5"><b>Linkedin Article:</b> Containerized Embedded Development Environment</h3>
-                                    <div class="mt-2">
+                                    <h3 class="card-title h5"><span class="fw-bold">LinkedIn Article:</span> Containerized Embedded Development Environment</h3>
+                                    <div class="badges mt-2">
                                         <span class="badge bg-primary me-1 mb-1">Docker Container</span>
                                         <span class="badge bg-primary me-1 mb-1">WSL 2</span>
                                         <span class="badge bg-primary me-1 mb-1">VS Code</span>
@@ -175,26 +153,22 @@
                                 </div>
                             </div>
                             <p class="mt-3 mb-2 text-muted">
-                                About enabling containerized embedded development environments utilizing PlatformIO, Windows Subsystem for Linux, VS Code, Dev Containers, Docker containers, and microcontrollers as USB peripherals
+                                Introduction to containerized embedded development environments utilizing PlatformIO, Windows Subsystem for Linux, VS Code, Dev Containers, Docker containers, and microcontrollers as USB peripherals.
                             </p>
                             <div class="mt-auto">
-                                <a href="https://www.linkedin.com/pulse/connecting-microcontrollers-platformio-running-linux-windows-jenssen-c6ulf" target="_blank" class="me-2 text-decoration-none">Linkedin Article</a>
+                                <a href="https://www.linkedin.com/pulse/connecting-microcontrollers-platformio-running-linux-windows-jenssen-c6ulf" target="_blank" class="me-2 text-decoration-none">LinkedIn Article</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                
             </div>
         </section>
     </main>
 
-
-
-
-    <!-- Placeholder for footer -->
+    <!-- Footer -->
     <div id="footer-placeholder"></div>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -209,20 +183,17 @@
             cards.forEach(card => observer.observe(card));
         });
     </script>
-    
-    <!-- JavaScript to load header and footer -->
     <script>
         function loadHTML(file, elementId) {
-        fetch(file)
-            .then(response => response.text())
-            .then(data => {
-            document.getElementById(elementId).innerHTML = data;
-            })
-            .catch(error => console.error('Error loading file:', error));
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => console.error('Error loading file:', error));
         }
         loadHTML('common/header.html', 'header-placeholder');
         loadHTML('common/footer.html', 'footer-placeholder');
     </script>
-
 </body>
 </html>
