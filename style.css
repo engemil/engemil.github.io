@@ -192,6 +192,13 @@ footer {
     color: var(--text-muted);
 }
 
+/* Featured Project Card Image */
+.card-img-featured {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 991px) {
     .navbar-nav {
